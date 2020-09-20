@@ -3,7 +3,7 @@
 require 'pry'
 def key_for_min_value(name_hash)
   binding.pry
-  name_hash.select do |key,value|
+  name_hash.include? do |key,value|
     key <=> key
   end
   binding.pry
